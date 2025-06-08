@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enter Secret Anime Code | Anime Empire</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(#0a0a0a, #1c1c1c);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #111;
+    padding: 15px 0;
+    font-size: 24px;
+    color: #00ffae;
+    border-bottom: 2px solid #00ff88;
+  }
+
+  .container {
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.35);
+    width: 95%;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #00ffae;
+  }
+
+  p {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background: #00e676;
+  }
+
+  #errorMsg {
+    margin-top: 20px;
+    color: #ff4b4b;
+    font-weight: bold;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 15px;
+    font-size: 14px;
+    opacity: 0.5;
+    background-color: #111;
+  }
+
+  footer i {
+    margin: 0 5px;
+    color: #00ff88;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <i class="fa-solid fa-code"></i> Code Wala Anime
+  </header>
+
+  <div class="container">
+    <h2>Unlock Anime Episode</h2>
+    <p>Enter your secret code to watch or download:</p>
+
+    <input type="text" id="codeInput" placeholder="e.g. gojo2025" />
+    <button onclick="checkCode()">Unlock Now</button>
+
+    <p id="errorMsg"></p>
+  </div>
+
+  <footer>
+    <p>
+      <i class="fas fa-globe"></i> Anime Empire |
+      <i class="fas fa-user-shield"></i> Powered by Praveen |
+      <i class="fas fa-copyright"></i> 2025
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
